@@ -7,6 +7,7 @@
 
 from sys import stdout as std
 from time import sleep
+import os
 
 buffers = ["Tanmay", "Yugandhar"]
 buf = ""
@@ -21,18 +22,23 @@ while 1:
             buf += n
             std.write(f"\rHello, {buf}")
             std.flush()
-            sleep(.300)
+            sleep(.400)
+        # for n in s:
+        #     temp += "  "
+        # std.write(f"\rHello, {temp}")
+        # # std.write("\rHello,                                       ")
+        # std.flush()
+        temp = ""
         for n in s:
-            temp += "\0"
-            std.write(f"\rHello, {temp}")
-            std.flush()
-        for n in s:
-            buf[:-1]
+            buf = buf[:-1]
+            # std.write(f"\rHello, {buf}{temp}")
             std.write(f"\rHello, {buf}")
             std.flush()
-            sleep(.300)
+            # temp += " "
+            sleep(.400)
+            os.system('cls')
         buf = ""
-        temp = " "
+        temp = ""
     std.flush()
 
 # for i in range(1, 100001):
