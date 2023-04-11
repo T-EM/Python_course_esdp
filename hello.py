@@ -18,3 +18,6 @@ print(b//a) # Floor Division
 # tip for internships
 
 # email = mttestacc7@gmail.com
+
+# Devops
+# LAM -(Linux, Apache, MySql)
